@@ -6,6 +6,7 @@ import Layout from "./Layouts/Layout";
 import Store from "./stores/store";
 
 import "./App.css";
+import InputComponent from "./components/InputComponent";
 
 const App = () => {
     return (
@@ -17,7 +18,9 @@ const App = () => {
                             <Route exact path="/">
                                 <MyComponent />
                             </Route>
-                            <Route path="/input"></Route>
+                            <Route path="/input">
+                                <InputComponent />
+                            </Route>
                         </Switch>
                     </Layout>
                 </div>
