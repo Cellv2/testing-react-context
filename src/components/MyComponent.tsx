@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 
 import { Context } from "../stores/store";
+import { Link } from "react-router-dom";
 
 const MyComponent = () => {
     //@ts-ignore
@@ -26,7 +27,10 @@ const MyComponent = () => {
             <h2>MyComponent</h2>
             <p>Name: {state.name}</p>
             <p>Email: {state.email}</p>
-            <button onClick={handleOnClick}>Click</button>
+            <button onClick={handleOnClick}>Randomise the user!</button>
+            <br />
+            <br />
+            <Link to="/input">Inputs to update global state</Link>
         </>
     );
 };
